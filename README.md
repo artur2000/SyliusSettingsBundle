@@ -45,3 +45,5 @@ Authors
 
 The bundle was originally created by [Paweł Jędrzejewski](http://pjedrzejewski.com).
 See the list of [contributors](https://github.com/Sylius/SyliusSettingsBundle/contributors).
+
+--
