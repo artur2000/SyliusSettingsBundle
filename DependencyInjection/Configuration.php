@@ -30,7 +30,7 @@ final class Configuration implements ConfigurationInterface
      */
     public function getConfigTreeBuilder()
     {
-        $treeBuilder = new TreeBuilder('sylius_settings');
+        $rootNode = new TreeBuilder('sylius_settings');
 
         $rootNode
             ->addDefaultsIfNotSet()
