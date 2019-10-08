@@ -30,16 +30,16 @@ final class Configuration implements ConfigurationInterface
      */
     public function getConfigTreeBuilder()
     {
-        $rootNode = new TreeBuilder('sylius_settings');
+        $treeBuilder = new TreeBuilder('sylius_settings');
 
-        $$treeBuilder->getRootNode()
+        $treeBuilder->getRootNode()
             ->addDefaultsIfNotSet()
             ->children()
-                ->scalarNode('driver')->defaultValue(SyliusResourceBundle::DRIVER_DOCTRINE_ORM)->end()
+            ->scalarNode('driver')->defaultValue(SyliusResourceBundle::DRIVER_DOCTRINE_ORM)->end()
             ->end()
         ;
 
-        $this->addClassesSection($rootNode);
+        $this->addClassesSection($treeBuilder->getRootNode());
 
         return $treeBuilder;
     }
