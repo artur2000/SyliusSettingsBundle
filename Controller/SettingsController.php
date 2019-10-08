@@ -24,7 +24,7 @@ use Symfony\Component\Validator\Exception\ValidatorException;
 /**
  * @author Paweł Jędrzejewski <pawel@sylius.org>
  */
-class SettingsController extends FOSRestController
+class SettingsController extends AbstractFOSRestController
 {
     /**
      * @param Request $request
