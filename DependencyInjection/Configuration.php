@@ -32,7 +32,7 @@ final class Configuration implements ConfigurationInterface
     {
         $rootNode = new TreeBuilder('sylius_settings');
 
-        $rootNode
+        $$treeBuilder->getRootNode()
             ->addDefaultsIfNotSet()
             ->children()
                 ->scalarNode('driver')->defaultValue(SyliusResourceBundle::DRIVER_DOCTRINE_ORM)->end()
